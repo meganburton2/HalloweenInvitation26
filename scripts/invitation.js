@@ -1,6 +1,6 @@
 "use strict"
 
 
-function move_bats() {
-    
-}
+// document.addEventListener('DOMContentLoaded', () => {
+//     // functions here
+// });

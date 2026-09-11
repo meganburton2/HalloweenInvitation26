@@ -4,14 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boo!</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
     <script src="scripts/invitation.js" defer></script>
 </head>
 <body>
-    <div class="index-title">
-        <h1>LET'S GET SPOOKY</h1>
-    </div>
+    <svg viewBox="0 0 500 400">
+        <defs>
+            <path id="arch-path" d="M 20 230 A 400 400 0 0 1 470 230"></path>
+        </defs>
+        <text class="index-title">
+            <textPath href="#arch-path" startOffset="50%" text-anchor="middle">
+                Let's Get Spooky!
+            </textPath>
+        </text>
+    </svg>
 
-    <div class="bats">
+    <div class="bats" id="bats">
         <img src="images/silhouette-of-a-bat.svg" alt="black bats" class="bat bat1">
         <img src="images/silhouette-of-a-bat.svg" alt="black bats" class="bat bat2">
         <img src="images/silhouette-of-a-bat.svg" alt="black bats" class="bat bat3">
@@ -33,15 +43,9 @@
         <img src="images/skeleton-body.svg" alt="armless skeleton">
     </div>
     <div class="pumpkin">
+        <!-- PUMPKIN IMAGE NEEDS PIXEL ERASURE FOR HAT -->
         <a href="form.html"><img src="images/pumpkin.svg" alt="topless jack-o-lantern"></a>
     </div>
-
-    <!-- <a class="homepage" href="info.html">
-        <vclasseo autoplay loop muted>
-            <source src="images/home.mp4" type="vclasseo/mp4">
-            Your browser does not support the vclasseo provclassed.
-        </vclasseo>
-    </a> -->
 
 </body>
 </html>

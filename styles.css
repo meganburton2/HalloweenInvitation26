@@ -1,13 +1,21 @@
-/* .homepage video {
-    display: flex;
-    min-width: 100%;
-    height: auto;
+body {
     background: #ffecec;
-} */
+}
 
-/* .bats img {
-    max-width: 100;
-} */
+.index-title {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-size: 4rem;
+    justify-content: center;
+}
+
+svg {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin-bottom: -275px;
+    position: relative;
+}
 
 .bats {
     position: relative;
@@ -26,65 +34,147 @@
 }
 
 .bat1 { 
-    left: 15%;   
+    left: 8%;   
     top: 45%;
     transform: rotate(10deg); 
+    animation: bat1move 2s linear infinite;
+}
+
+@keyframes bat1move {
+    0% {
+    transform: rotate(0deg) translateX(25px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(25px) rotate(-360deg);
+    }
 }
 
 .bat2 { 
-    left: 25%;  
+    left: 18%;  
     top: 50%; 
     transform: rotate(-18deg); 
+    animation: bat2move 3s ease-in-out infinite alternate;
+}
+
+@keyframes bat2move {
+    0%      {left: 18%;}
+    50%     {left: 23%;}
+    100%    {left: 18%;}
 }
 
 .bat3 { 
-    left: 25%;  
+    left: 18%;  
     top: 28%; 
     transform: rotate(-12deg); 
+    animation: bat3move 6s ease-in-out infinite;
+}
+
+@keyframes bat3move {
+    0%      {top: 28%;}
+    25%     {top: 20%; left: 19%;}
+    50%     {top: 26%;}
+    75%     {top: 20%; left: 13%;}
+    100%    {top: 28%; left: 18%;}
 }
 
 .bat4 { 
-    left: 37%;  
+    left: 30%;  
     top: 30%; 
     transform: rotate(25deg);  
+    animation: bat4move 2s linear infinite;
+}
+
+@keyframes bat4move {
+    0% {
+    transform: rotate(0deg) translateX(25px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg) translateX(25px) rotate(360deg);
+    }
 }
 
 .bat5 { 
-    left: 47%;  
+    left: 40%;  
     top: 15%; 
-    transform: rotate(0deg);   
+    transform: rotate(0deg);
+    animation: bat5move 3s ease-in-out infinite alternate;   
+}
+
+@keyframes bat5move {
+    0%      {top: 15%;}
+    33%     {top: 10%;}
+    66%     {top: 20%;}
+    100%    {top: 15%;}
 }
 
 .bat6 { 
-    left: 60%;  
+    left: 53%;  
     top: 18%; 
-    transform: rotate(15deg);   
+    transform: rotate(15deg);
+    animation: bat6move 3s linear infinite;   
+}
+
+@keyframes bat6move {
+    0% {
+    transform: rotate(0deg) translateX(25px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(25px) rotate(-360deg);
+    }
 }
 
 .bat7 { 
-    left: 67%;  
+    left: 60%;  
     top: 37%; 
-    /* transform: rotate(5deg);   */
+    animation: bat7move 5s ease-in-out infinite alternate;
+}
+
+@keyframes bat7move {
+    0%      {left: 60%;}
+    20%     {left: 58%;}    
+    40%     {left: 60%;}
+    60%     {left: 59%;}
+    80%     {left: 61%;}
+    100%    {left: 60%;}
 }
 
 .bat8 { 
-    left: 75%;  
+    left: 68%;  
     top: 22%; 
-    transform: rotate(18deg);  
+    transform: rotate(18deg);
+    animation: bat8move 2s ease-in-out infinite;  
+}
+
+@keyframes bat8move {
+    0%      {top: 22%;}
+    50%     {top: 33%; left: 70%;}
+    100%    {top: 22%;}
 }
 
 .bat9 { 
-    left: 80%;  
+    left: 73%;  
     top: 50%;  
-    transform: rotate(30deg);  
+    transform: rotate(30deg);
+    animation: bat9move 4s ease-in-out infinite alternate;  
+}
+
+@keyframes bat9move {
+    0%      {top: 50%;}
+    33%     {top: 55%; left: 75%;}
+    66%     {top: 45%; left: 70%;}
+    100%    {top: 50%;}
 }
 
 .bat10 { 
-    left: 88%;   
+    left: 81%;   
     top: 35%;
-    transform: rotate(45deg); 
+    transform: rotate(45deg);
+    animation: bat10move 3s ease-in-out infinite; 
 }
 
-/* @media (max-width: 600px) {
-    
-} */
+@keyframes bat10move {
+    0%      {top: 35%;}
+    33%     {top: 30%;}
+    66%     {top: 40%;}
+    100%    {top: 35%;}
+}
