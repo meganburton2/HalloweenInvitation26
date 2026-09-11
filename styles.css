@@ -1,8 +1,14 @@
-.homepage video {
+/* .homepage video {
+    display: flex;
     min-width: 100%;
-    min-height: 100%;
-    width: auto;
     height: auto;
-    object-fit: cover;
     background: #ffecec;
+} */
+
+.bats img {
+    max-width: 100;
 }
+
+/* @media (max-width: 600px) {
+    
+} */
